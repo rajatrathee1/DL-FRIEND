@@ -1,0 +1,149 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button and Heading -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_back_arrow"
+                android:contentDescription="@string/back_button_description"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Requirements Documents"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:layout_marginStart="16dp" />
+
+        </LinearLayout>
+
+        <!-- Accepted Age Proofs -->
+        <TextView
+            android:id="@+id/age_proofs_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accepted age proofs (Any one from the following list)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Age Proofs List -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_bullet"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10th class mark sheet"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_text"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Repeat the same LinearLayout for each bullet point -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_bullet"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transfer Certificate from any school for any class with Date of birth mentioned on it"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_text"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Add more bullet points as needed -->
+        </LinearLayout>
+
+        <!-- Permanent Address Proofs -->
+        <TextView
+            android:id="@+id/address_proofs_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permanent address proof (Any one from the following list)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Address Proofs List -->
+        <!-- Follow the same pattern as the Age Proofs List for the Address Proofs -->
+
+        <!-- Photographs -->
+        <TextView
+            android:id="@+id/photographs_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photographs:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Photographs List -->
+        <!-- Follow the same pattern as the Age Proofs List for the Photographs -->
+
+        <!-- Forms -->
+        <TextView
+            android:id="@+id/forms_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forms:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Forms List -->
+        <!-- Follow the same pattern as the Age Proofs List for the Forms -->
+
+    </LinearLayout>
+
+</ScrollView>

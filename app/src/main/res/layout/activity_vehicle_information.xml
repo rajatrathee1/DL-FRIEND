@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".VehicleInformationActivity">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="@string/back_button" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Information"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        android:textColor="@color/black"/>
+
+    <!-- Static Text for Vehicle Number -->
+    <TextView
+        android:id="@+id/static_vehicle_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Vehicle Number:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"/>
+
+    <!-- Vehicle Number Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/vehicle_number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DL0XXX0000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vehicle_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:backgroundTint="@color/purple"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"/>
+</LinearLayout>

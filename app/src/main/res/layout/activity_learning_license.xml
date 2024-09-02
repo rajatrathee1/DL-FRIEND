@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/back_arrow_learning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="@string/back_button_description"
+        android:layout_gravity="start"
+        android:padding="8dp" />
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/learning_license_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step by step procedure to obtain your Learner's Driving License."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Steps Text -->
+    <TextView
+        android:id="@+id/learning_license_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Step 1: Register on the Sarathi Website... (Add all steps here)"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

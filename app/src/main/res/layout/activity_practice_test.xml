@@ -1,0 +1,157 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- Back Arrow and Title Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="@string/back_button"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"/>
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/practice_test_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practice Test"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <!-- Question and Answers Layout -->
+    <TextView
+        android:id="@+id/question_indicator_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1/1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/question_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Question text goes here"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option 1"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option 2"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option 3"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Navigation Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/previous_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Improved Tip Section -->
+    <LinearLayout
+        android:id="@+id/tip_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="@drawable/rounded_corners_background"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"> <!-- Initially hidden -->
+
+        <ImageView
+            android:id="@+id/tip_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_bulb_on"
+            android:contentDescription="@string/tip_icon_description"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/tip_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Tip:"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tip_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="This is a sample tip text." />
+    </LinearLayout>
+
+</LinearLayout>
