@@ -1,4 +1,4 @@
-package com.example.yourpackage
+package com.example.drivinglicenseinfo
 
 import android.os.Bundle
 import android.view.LayoutInflater

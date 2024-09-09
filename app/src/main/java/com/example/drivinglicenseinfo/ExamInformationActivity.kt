@@ -1,5 +1,7 @@
 package com.example.drivinglicenseinfo
 
+import com.example.drivinglicenseinfo.QuestionModel
+import com.example.drivinglicenseinfo.QuizModel
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.OnBackPressedCallback

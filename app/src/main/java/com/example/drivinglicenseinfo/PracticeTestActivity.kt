@@ -1,5 +1,6 @@
 package com.example.drivinglicenseinfo
 
+import com.example.drivinglicenseinfo.PracticeTestQuestionModel
 import android.graphics.Color
 import android.os.Bundle
 import android.view.MenuItem
@@ -31,6 +32,10 @@ class PracticeTestActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         // Enable the back button in the ActionBar
+        // Back Arrow Click Listener
+        binding.backArrow.setOnClickListener {
+            finish() // Close the activity and go back to the previous one
+        }
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "Practice Test"
 

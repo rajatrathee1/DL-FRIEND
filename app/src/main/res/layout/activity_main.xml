@@ -400,20 +400,21 @@
         </LinearLayout>
 
 
-        <!-- RecyclerView for Quiz List -->
+        <!-- Text Label for Topic-wise Quizzes -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="All Items"
+            android:text="Topic-wise Exams"
             android:layout_marginTop="16dp"
-            android:layout_marginStart="4dp"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <!-- RecyclerView for Quiz List -->
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:id="@+id/recycler_view" />
+            android:layout_marginTop="16dp"/>
 
     </LinearLayout>
 

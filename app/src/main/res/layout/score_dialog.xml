@@ -7,14 +7,18 @@
     android:gravity="center"
     android:padding="16dp"
     android:layout_height="wrap_content">
+
+    <!-- Title TextView for Result -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text = "Congrats! You have passed"
+        tools:text="Congrats! You have passed"
         android:gravity="center"
         android:textSize="20sp"
         android:textStyle="bold"
         android:id="@+id/score_title"/>
+
+    <!-- Circular Progress Indicator to show the percentage -->
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -22,27 +26,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/score_progress_indicator"
-            android:layout_centerVertical = "true"
+            android:layout_centerVertical="true"
             app:trackColor="@color/grey"
             tools:progress="60"
             app:trackCornerRadius="20dp"
             app:trackThickness="8dp"
             app:indicatorSize="90dp"/>
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       tools:text="50%"
-       android:textSize="18sp"
-       android:layout_centerInParent="true"
-       android:textStyle="bold"
-       android:id="@+id/score_progress_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="50%"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:id="@+id/score_progress_text"/>
     </RelativeLayout>
+
+    <!-- Subtitle TextView for Score Summary -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="6 out of 10 questions are correct"
         android:gravity="center"
         android:id="@+id/score_subtitle"/>
+
+    <!-- Finish Button -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,7 +58,12 @@
         android:layout_margin="8dp"
         android:id="@+id/finish_btn"/>
 
-
-
+    <!-- See Answers Button (new addition for quiz review) -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Answers"
+        android:layout_margin="8dp"
+        android:id="@+id/see_answers_btn"/>
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.drivinglicenseinfo
 
+import com.example.drivinglicenseinfo.QuizModel
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup

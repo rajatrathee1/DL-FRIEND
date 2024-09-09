@@ -6,4 +6,6 @@
     <string name="tab_layout_description">Tab layout for switching between questions and traffic signs</string>
     <string name="tip_icon_description">Light bulb icon representing a helpful tip</string>
     <string name="back_button_description">Back button</string>
+    <string name="scroll_view_description">This is the quiz answers review screen.</string>
+
 </resources>

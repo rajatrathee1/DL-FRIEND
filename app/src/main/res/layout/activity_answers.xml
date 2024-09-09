@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/passingScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passing Score"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/yourScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score"
+        android:textSize="18sp" />
+
+    <!-- This is where dynamic question and answer views will be added -->
+    <LinearLayout
+        android:id="@+id/answersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <!-- ImageView for road sign (limit the size to avoid it being too large) -->
+    <ImageView
+        android:id="@+id/answerImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:scaleType="fitCenter"
+        />
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/tryAgainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try Again" />
+
+</LinearLayout>
